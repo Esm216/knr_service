@@ -1,0 +1,68 @@
+.cta-section {
+  background: #FFC107;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  padding-left: 160px;
+  padding-right: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.cta-text {
+  max-width: 560px;
+}
+
+.cta-text h2 {
+  font-size: 1.6rem;
+  color: #111;
+  margin-bottom: 8px;
+  font-family: 'Manrope', 'Poppins', sans-serif;
+}
+
+.cta-text p {
+  color: #333;
+  line-height: 1.5;
+  font-size: 0.9rem;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.btn-dark {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #111;
+  border: 1.5px solid #111;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .cta-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

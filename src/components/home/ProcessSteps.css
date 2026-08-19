@@ -1,0 +1,160 @@
+.process-section {
+  background: #111;
+  color: #fff;
+  padding-left: 160px;
+  padding-right: 20px;
+}
+
+.process-header {
+  max-width: 600px;
+  margin: 0 auto 48px;
+}
+
+.process-header .eyebrow {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFC107;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.process-header h2 {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 12px;
+}
+
+.process-header p {
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.process-body {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.process-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.process-tab {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #1a1a1a;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease;
+}
+
+.process-tab .tab-number {
+  color: #666;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: color 0.2s ease;
+}
+
+.process-tab .tab-text strong {
+  display: block;
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.process-tab .tab-text small {
+  display: block;
+  color: #888;
+  font-size: 0.8rem;
+  margin-top: 2px;
+}
+
+.process-tab.active {
+  background: #1a1a1a;
+  border-color: #FFC107;
+}
+
+.process-tab.active .tab-number {
+  color: #FFC107;
+}
+
+.process-preview {
+  background: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.preview-image-wrap {
+  position: relative;
+}
+
+.preview-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  display: block;
+}
+
+.preview-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  background: #FFC107;
+  color: #111;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.preview-content {
+  padding: 24px;
+}
+
+.preview-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.preview-content p {
+  color: #aaa;
+  line-height: 1.6;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.preview-meta {
+  display: flex;
+  gap: 40px;
+  border-top: 1px solid #333;
+  padding-top: 16px;
+}
+
+.meta-label {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.meta-value {
+  display: block;
+  font-size: 0.85rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+@media (max-width: 900px) {
+  .process-body {
+    grid-template-columns: 1fr;
+  }
+}

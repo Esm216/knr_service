@@ -1,0 +1,41 @@
+/* src/components/home/Stats.css */
+.stats-section {
+  background: #111;
+  padding-left: 160px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.stat-item {
+  border-left: 3px solid #FFC107;
+  padding-left: 16px;
+}
+
+.stat-value {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 4px;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
