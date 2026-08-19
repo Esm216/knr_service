@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 :root {
   --text: #6b6375;
@@ -16,7 +17,7 @@
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font-family: var(--sans);
+  font-family: 'Manrope', sans-serif;
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
@@ -24,6 +25,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 
@@ -37,6 +39,10 @@ html {
 body {
   width: 100%;
   margin: 0;
+}
+
+.page-content {
+  margin-left: 180px;
 }
 
 #root {

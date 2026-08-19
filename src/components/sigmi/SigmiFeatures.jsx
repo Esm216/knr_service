@@ -14,12 +14,12 @@ const features = [
 
 function SigmiFeatures() {
   return (
-    <section className="py-20 px-10 max-w-6xl mx-auto">
+    <section className="py-20 px-10 max-w-6xl mx-auto ml-[140px] font-bold">
       <Reveal className="text-center max-w-xl mx-auto mb-12">
-        <span className="block text-xs tracking-wider text-yellow-400 font-semibold mb-2">
+        <span className="block text-xs tracking-[2px] text-400 font-black mb-2  text-gray-800">
           Fonctionnalités
         </span>
-        <h2 className="text-2xl leading-tight text-neutral-900">
+        <h2 className="text-4xl font-bold leading-[1.1] mb-5 text-neutral-900 ">
           Tout ce dont un gestionnaire de patrimoine a réellement besoin
         </h2>
       </Reveal>

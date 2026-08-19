@@ -4,11 +4,12 @@ import heroBg from '../../assets/sigmi1.jpg';
 function SigmiHero() {
   return (
     <section
-      className="relative min-h-[470px] flex items-center px-16 bg-cover bg-center"
+      className="relative min-h-[470px] flex items-center bg-cover bg-center"
       style={{ backgroundImage: `url(${heroBg})` }}
     >
+      <div className="page-content">
       <div className="absolute inset-0 z-10 bg-slate-950/70" />
-      <div className="relative z-20 max-w-3xl">
+      <div className="relative z-20 max-w-3xl ">
         <Reveal>
           <h1 className="text-white text-4xl md:text-5xl font-bold leading-tight mb-6">
             SIGMI – Système Intelligent de Gestion et de Maintenance des Infrastructures
@@ -20,6 +21,7 @@ function SigmiHero() {
             patrimoine bâti, planifier son entretien et maîtriser son budget.
           </p>
         </Reveal>
+      </div>
       </div>
     </section>
   );
