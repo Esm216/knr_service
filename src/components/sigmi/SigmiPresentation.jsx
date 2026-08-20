@@ -4,7 +4,7 @@ import dashboardImg from '../../assets/S1.jpg';
 
 function SigmiPresentation() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-14 py-20 w-full items-center">
+    <section className="grid grid-cols-1 md:grid-cols-[55%_45%] gap-14 py-20 w-full items-center">
 
       {/* CONTENU À GAUCHE */}
       <Reveal>
@@ -31,7 +31,7 @@ function SigmiPresentation() {
             en une demi-journée de formation.
           </p>
 
-          <div className="flex flex-wrap gap-3">
+          <div className="flex gap-3">
             <button className="inline-flex items-center gap-2 bg-yellow-400 text-neutral-900 font-black px-6 py-4 rounded-lg text-sm">
               <FiPlayCircle />
               Demander une démonstration
@@ -44,16 +44,16 @@ function SigmiPresentation() {
         </div>
       </Reveal>
 
-      {/* CONTENU À DROITE */}
+      
       <Reveal delay={150}>
-        <div className="bg-neutral-100 rounded-xl p-4 text-center">
+        <div className="bg-neutral-100 rounded-xl p-4 w-[90%]">
           <img
             src={dashboardImg}
             alt="Tableau de bord SIGMI"
             className="w-full rounded-lg"
           />
 
-          <span className="block mt-2 text-xs text-neutral-400">
+          <span className="block mt-2 text-xs text-neutral-400 text-left">
             Tableau de bord SIGMI, capture de démonstration.
           </span>
         </div>

@@ -4,9 +4,8 @@ import { FiMapPin } from 'react-icons/fi';
 import img1 from '../../assets/M1.jpg';
 import img2 from '../../assets/M2.jpg';
 import img3 from '../../assets/M3.jpg';
-import img4 from '../../assets/realisations2.jpg'; 
-import img5 from '../../assets/sigmi1.jpg'; 
-
+import img4 from '../../assets/realisations2.jpg';
+import img5 from '../../assets/sigmi1.jpg';
 
 const categories = [
   'Toutes les missions',
@@ -32,7 +31,7 @@ const projects = [
       "KNR a mis en place un contrôle hebdomadaire avec points d'arrêt avant chaque coulage, vérification systématique des ferraillages, contrôle du dosage des bétons et validation contradictoire des situations mensuelles.",
     resultats: [
       'Livraison respectée avec seulement 3 semaines de décalage',
-      '11 % d\'économies sur le décompte final des travaux',
+      "11 % d'économies sur le décompte final des travaux",
       'Aucune reprise structurelle après réception',
     ],
   },
@@ -50,7 +49,7 @@ const projects = [
       "KNR a repris les études de fondations à partir d'essais complémentaires, proposé des semelles filantes renforcées sur la zone sensible et intégré un réseau de drainage périphérique, puis assuré le contrôle technique jusqu'à la réception.",
     resultats: [
       'Surcoût de fondation limité à 6 % du gros œuvre',
-      'Aucune remontée d\'humidité constatée après deux saisons de pluies',
+      "Aucune remontée d'humidité constatée après deux saisons de pluies",
       'Réception prononcée sans réserve majeure',
     ],
   },
@@ -96,8 +95,8 @@ const projects = [
       "KNR a posé des témoins pendant huit semaines, réalisé des mesures sclérométriques et une détection d'armatures, puis démontré l'origine non structurelle des fissures.",
     resultats: [],
   },
-  
-]
+];
+
 function RealisationsGallery() {
   const [activeFilter, setActiveFilter] = useState('Toutes les missions');
 
@@ -107,9 +106,9 @@ function RealisationsGallery() {
       : projects.filter((p) => p.category === activeFilter);
 
   return (
-    <section className="py-20 px-16 max-w-6xl mx-auto overflow-x-hidden">
+    <section className="py-20 px-10 max-w-6xl mx-auto overflow-x-hidden">
       <Reveal className="mb-8">
-        <span className="block text-xs tracking-wider text-yellow-500 font-semibold mb-2">
+        <span className="block text-xs tracking-wider  font-bold mb-2">
           Galerie de projets
         </span>
         <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-3">
@@ -122,10 +121,10 @@ function RealisationsGallery() {
       </Reveal>
 
       <Reveal delay={100} className="mb-10">
-        <span className="block text-xs text-neutral-400 mb-3">
+        <span className="block text-xs text-neutral-800 mb-3 font-semibold">
           Filtrer par type de mission
         </span>
-        <div className="flex flex-wrap gap-2  min-w-0">
+        <div className="flex flex-wrap gap-2 min-w-0">
           {categories.map((cat) => (
             <button
               key={cat}
@@ -145,10 +144,10 @@ function RealisationsGallery() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {filtered.map((project, i) => (
           <Reveal key={i} delay={i * 80}>
-            <div className="border border-neutral-200 rounded-xl overflow-hidden h-full flex flex-col">
+            <div className="border border-neutral-200 rounded-none overflow-hidden h-full flex flex-col shadow-sm hover:shadow-md transition-shadow">
               <div className="relative">
-                <img src={project.image} alt={project.title} className="w-full h-48 object-cover" />
-                <span className="absolute top-3 left-3 bg-yellow-400 text-neutral-900 text-xs font-bold px-3 py-1 rounded">
+                <img src={project.image} alt={project.title} className="w-full h-80 object-cover" />
+                <span className="absolute top-3 left-3 bg-[#FFC107] text-neutral-900 text-xs font-bold px-3 py-1 rounded">
                   {project.category}
                 </span>
               </div>
@@ -181,7 +180,7 @@ function RealisationsGallery() {
                       <ul className="flex flex-col gap-1.5">
                         {project.resultats.map((r, j) => (
                           <li key={j} className="flex items-start gap-2 text-xs text-neutral-500">
-                            <span className="w-1.5 h-1.5 rounded-full bg-yellow-400 mt-1.5 flex-shrink-0" />
+                            <span className="w-1.5 h-1.5 rounded-full bg-[#FFC107] mt-1.5 flex-shrink-0" />
                             {r}
                           </li>
                         ))}
